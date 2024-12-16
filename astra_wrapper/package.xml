@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>astra_wrapper</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="jesse-imerse@todo.todo">jesse-imerse</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!-- Testing dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <!-- ROS dependencies -->
+  <depend>cv_bridge</depend>
+
+  <!-- Python dependencies -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv-contrib-python</exec_depend>
+  <exec_depend>python3-opencv-python</exec_depend>
+  <exec_depend>python3-plyfile</exec_depend>
+  <exec_depend>python3-ultralytics</exec_depend>
+
+  <!-- Non-standard Python dependencies -->
+  <!-- These dependencies may require manual installation or inclusion in requirements.txt -->
+  <!-- open3d and pyorbbecsdk often need specific installation commands -->
+  <exec_depend>python3-open3d</exec_depend>
+  <exec_depend>python3-pyorbbecsdk</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+    <ament_index>share</ament_index>
+  </export>
+</package>
+
